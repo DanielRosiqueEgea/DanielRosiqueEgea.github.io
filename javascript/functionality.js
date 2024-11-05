@@ -43,6 +43,7 @@ window.onclick = function(event) {
 
 
 $(function(){
+  console.log("Se va crear la pagina")
   $("#includeNavbar").load("snippets/navbar.html"); 
   $("#includePageContent").load("snippets/pageContent.html");
   $("#includeBandSection").load("snippets/bandSection.html");
