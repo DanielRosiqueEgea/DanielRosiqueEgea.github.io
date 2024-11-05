@@ -24,8 +24,7 @@ $(function(){
 });
 
 
-var myIndex = 0;
-carousel();
+var myIndex = 1;
 
 function carousel() {
   var i;
@@ -38,6 +37,7 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 4000);    
 }
+carousel();
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
