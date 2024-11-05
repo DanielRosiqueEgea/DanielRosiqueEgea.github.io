@@ -8,6 +8,8 @@
 //   });
 
 console.log("Hello World");
+console.log("jQuery version:", $.fn.jquery);
+
 var myIndex = 0;
 carousel();
 
@@ -41,8 +43,7 @@ window.onclick = function(event) {
   }
 }
 
-
-$(function(){
+window.onload = function(){
   console.log("Se va crear la pagina");
   $("#includeNavbar").load("snippets/navbar.html"); 
   $("#includePageContent").load("snippets/pageContent.html");
@@ -51,4 +52,4 @@ $(function(){
   $("#includeTicketModal").load("snippets/ticketModal.html");
   $("#includeContactSection").load("snippets/contactSection.html");
   $("#includeFooter").load("snippets/footer.html");
-});
+};
