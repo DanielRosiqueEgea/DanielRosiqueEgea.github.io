@@ -1,5 +1,6 @@
 ![Web Page Icon](./Images/ReDPortfolio-icon.png?raw=true)
-![Web Page Icon](./Images/sonic.png?raw=true)
+
+
 
 # Descripción
 Proyecto de portfolio personal utilizando github pages. 
