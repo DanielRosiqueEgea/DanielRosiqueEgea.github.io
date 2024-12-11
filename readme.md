@@ -1,4 +1,4 @@
-![Web Page Icon](./Images/ReDPortfolio-icon.png?raw=true)
+![Web Page Icon](./Images/ReDPortfolio-Icon.png) **ReD Portfolio**
 
 
 
