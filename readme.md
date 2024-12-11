@@ -1,4 +1,4 @@
-![Web Page Icon](./Images/ReDPortfolio-Icon.png)
+
 <img src="./Images/ReDPortfolio-Icon.png" width="100">
  **ReD Portfolio**
 
