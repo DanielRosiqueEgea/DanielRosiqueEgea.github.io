@@ -1,40 +1,31 @@
-// $(document).ready(function(){
-//     $("button").click(function(){
-//       $("p").hide();
-//       $("button").click(function(){
-//         $("p").show();
-//       })
-//     });
-//   });
 
-console.log("Hello World");
-
-console.log("jQuery version:", $.fn.jquery);
-
-
-$(function(){
-  console.log("Se va crear la pagina");
-  $("#includeNavbar").load("snippets/navbar.html"); 
-  $("#includePageContent").load("snippets/pageContent.html");
-  $("#includeBandSection").load("snippets/bandSection.html");
-  $("#includeTourSection").load("snippets/tourSection.html");
-  $("#includeTicketModal").load("snippets/ticketModal.html");
-  $("#includeContactSection").load("snippets/contactSection.html");
-  $("#includeFooter").load("snippets/footer.html");
-});
-
-
-var myIndex = 1;
-
+let myIndex = 1;
+var carousel_error = 0;
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+
+  const slides = $(".mySlides");
+
+  if (carousel_error > 1) {
+    console.log("Error loading slides: Terminating");
+    return;
   }
+
+  if (slides.length == 0) {
+    console.log("Error loading slides: Trying again...");
+    // Se intenta una unica vez más en caso de haber error
+    carousel_error += 1;
+    setTimeout(carousel, 4000);
+    return;
+  }
+
+ 
+  slides.hide();
+
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
+  myIndex = myIndex % slides.length + 1;
+  
+  slides.eq(myIndex-1).show();
+  
   setTimeout(carousel, 4000);    
 }
 carousel();

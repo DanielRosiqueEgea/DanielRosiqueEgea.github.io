@@ -1,0 +1,3 @@
+database_scripts/data/*
+database_scripts/*
+javascript/load_cv.js
