@@ -1,6 +1,7 @@
 
 <img src="./Images/ReDPortfolio-Icon.png" width="100">
- **ReD Portfolio**
+
+**ReD Portfolio**
 
 
 
